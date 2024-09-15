@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.dev.spring.batch.BatchProcessingDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.083 s <<< FAILURE! - in com.dev.spring.batch.BatchProcessingDemoApplicationTests
+contextLoads  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'jobRepository' defined in class path resource [com/dev/spring/batch/config/SpringBatchConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=springBatchConfig; factoryMethodName=jobRepository; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/dev/spring/batch/config/SpringBatchConfig.class]] for bean 'jobRepository': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration; factoryMethodName=jobRepository; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/batch/core/configuration/annotation/SimpleBatchConfiguration.class]] bound.
+
